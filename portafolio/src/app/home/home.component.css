@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    font-family: 'Zain', sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+.rectangle-div {
+    width: 343px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    filter: blur(180px);
+    z-index: -1;
+}
+
+.header {
+    text-align: center;
+    margin-top: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-family: 'Vibes', cursive;
+    color: #fff;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a {
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.text-block {
+    flex-grow: 1;
+    max-width: 60%;
+}
+
+.text-block h2 {
+    font-size: 60px;
+    margin-bottom: 5px;
+}
+
+.text-block p {
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+/* Clases para las letras de "experiences" */
+.x {
+    color: #d27373;
+}
+
+.p {
+    color: #695e5e;
+}
+
+.e {
+    color: #fff;
+}
+
+.r {
+    color: #93ffb9;
+}
+
+.i {
+    color: #edcc93;
+}
+
+.e1 {
+    color: #6f6f6f;
+}
+
+.n {
+    color: #ff9deb;
+}
+
+.c {
+    color: #ad7ca3;
+}
+
+.e2 {
+    color: #f3b66c;
+}
+
+.s {
+    color: #9d9d9d;
+}
+
+.experiences {
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: -40px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.image-container {
+    width: 35%;
+    height: auto;
+    min-width: 300px;
+}
+
+.image-container img {
+    width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-left: -20px;
+}
+
+/* Bloques para "Brands" y "Recents" */
+.brands, .recents {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title-section {
+    position: relative;
+    padding: 10px 70px;
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    z-index: 1;
+}
+
+.title-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/portafolio/src/assets/images/titlegrain.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    z-index: -1;
+    transform: rotate(-10deg);
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    animation: blink 1.5s infinite ease-in-out;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+/* Resto del CSS omitido por claridad, pero sigue igual a tu código */

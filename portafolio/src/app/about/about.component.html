@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vibes:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+        .rectangle-div {
+            width: 343px; 
+            height: 180px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.6);
+            filter: blur(180px);
+            z-index: -1;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 10px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            font-family: 'Vibes', cursive;
+            color: #fff;
+            text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        .header a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .header.scrolled, .navigation.scrolled {
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .navigation a {
+            margin: 0 15px;
+            font-size: 24px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+            align-items: center;
+            flex: 1;
+        }
+
+        .text-block {
+            flex-grow: 1;
+            max-width: 60%;
+        }
+
+        .text-block h2 {
+            font-size: 60px;
+            margin-bottom: 5px;
+        }
+
+        .text-block p {
+            font-size: 30px;
+            font-weight: 200;
+            margin-top: 10px;
+        }
+
+        .image-container {
+            width: 35%;
+            height: auto;
+            min-width: 300px;
+        }
+
+        .image-container img {
+            width: 400px;
+            border-radius: 20px;
+            object-fit: cover;
+            margin-left: -20px;
+        }
+
+        .footer {
+            padding: 20px 0;
+            background-color: #222;
+            color: #ccc;
+            border-top: 1px solid #555;
+            flex-shrink: 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .footer-icons a {
+            margin-right: 15px;
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-icons a:hover {
+            color: #999;
+        }
+
+        .footer-copyright p {
+            font-size: 14px;
+            margin: 0;
+            color: #ccc;
+        }
+        
+        .navigation a.active {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="rectangle-div"></div>
+
+    <div class="header">
+        <a routerLink="/home"><h1>esteban</h1></a>
+    </div>
+
+    <div class="navigation">
+        <a routerLink="/about" routerLinkActive="active">About</a>
+        <a routerLink="/experience" routerLinkActive="active">Experience</a>
+        <a routerLink="/studies" routerLinkActive="active">Studies</a>
+    </div>
+
+    <div class="container">
+        <div class="text-block">
+            <h2>About Esteban Jara</h2>
+            <p>Esteban Jara is a digital designer and engineer passionate about technology and creativity. With experience in various projects, Esteban combines design and functionality to create impactful digital solutions.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-icons">
+                <a href="https://www.instagram.com/manu.noceda/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/estebanjaran/"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="https://github.com/stiv89"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="footer-copyright">
+                <p>©2024 Esteban Jara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

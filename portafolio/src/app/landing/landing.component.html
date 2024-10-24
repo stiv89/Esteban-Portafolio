@@ -1,0 +1,23 @@
+<!-- Bloques de luces -->
+<div class="bloque-inferior-izquierda"></div>
+<div class="bloque-superior-derecha"></div>
+
+<!-- Contenedor del texto -->
+<div class="container fade-out">
+    <h1>Esteban Jara</h1>
+</div>
+
+<script>
+    // Verificar si hay una URL almacenada en sessionStorage
+    const urlAnterior = sessionStorage.getItem('redireccion');
+    setTimeout(function() {
+        if (urlAnterior) {
+            // Redirigir a la página anterior después de la animación
+            window.location.href = urlAnterior;
+            sessionStorage.removeItem('redireccion'); // Limpiar la redirección
+        } else {
+            // Si no hay URL almacenada, ir a la página predeterminada (ej: "/otra-pagina/")
+            window.location.href = "/home";
+        }
+    }, 3000);  // Tiempo de la animación
+</script>
